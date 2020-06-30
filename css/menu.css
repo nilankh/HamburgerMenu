@@ -43,6 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.4s ease;
 }
 
 /* Hamburger Lines Top and bottom */
@@ -56,3 +57,24 @@
     height: 2px;
     background: inherit;
 }
+
+/* Moves Line down */
+.menu-wrap .hamburger > div:after {
+    top: 10px;
+
+}
+
+/* Toggler animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turns lines into x */
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after
+{
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
