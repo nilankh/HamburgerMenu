@@ -1,7 +1,7 @@
 :root {
-    --primary-color: rgba(13, 110, 1, 139, 0.75);
-    --secondary-color: rgba(229, 148, 0, 0.9);
-    --overlay-color: rgba(24, 39, 51, 0.85);
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --secondary-color: rgba(229, 148, 0 , 0.9);
+    --overlay-color: rgba(24, 39, 51 , 0.85);
     --menu-speed: 0.75s;   
 
 }
@@ -23,4 +23,12 @@ body {
     margin: auto;
     overflow: hidden;
     padding: 0 3rem;
+}
+
+#showcase {
+    background: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+
 }
